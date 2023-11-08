@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class TTHK_API APlayerCharacter : public AMainCharacter
 {
 	GENERATED_BODY()
@@ -23,6 +23,8 @@ public:
 	virtual void MoveRight(float Value) override;
 	virtual void Turn(float Value) override;
 	virtual void LookUp(float Value) override;
+	
+	void Tick(float DeltaTime);
 
 protected:
 

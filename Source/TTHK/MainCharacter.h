@@ -5,7 +5,7 @@
 #include "GameFramework/Character.h"
 #include "MainCharacter.generated.h"
 
-UCLASS()
+UCLASS(Abstract, NotBlueprintable)
 class TTHK_API AMainCharacter : public ACharacter
 {
 	GENERATED_BODY()
